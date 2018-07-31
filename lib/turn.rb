@@ -33,7 +33,8 @@ def turn(board)
   input = gets.chomp
   index = input_to_index(input)
   while valid_move?(board, index) != true
-    puts "You are naughty. \nYou either did not enter a number between 1 and 9 or you are trying to overwrite an existing move. \nTsk-tsk. Please try again: "
+    puts "You are naughty. \nYou either did not enter a number between 1 and 9 or you are trying to overwrite an existing move."
+    print "Tsk-tsk. Please try again: "
     input = gets.chomp
     index = input_to_index(input)
   end
